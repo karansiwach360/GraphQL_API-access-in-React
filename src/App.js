@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+
+import {useMutation, useQuery, useLazyQuery} from '@apollo/react-hooks';
+import gql from "graphql-tag";
+import GetAllCricketers from "./GetAllCricketers";
+import GetMostExperienced from "./GetMostExperienced";
+import CreateCricketer from "./CreateCricketer";
+import GetCricketerDetailsViaName from "./GetCricketerDetailsViaName";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GetAllCricketers />
+      <br/>
+      <GetMostExperienced />
+      <br/>
+      <GetCricketerDetailsViaName />
+      <br/>
+      <br/>
+      <CreateCricketer />
     </div>
   );
 }
