@@ -33,22 +33,21 @@ const GetMostExperienced = () => {
                 event.preventDefault();
                 getMostExperienced();
                 console.log(data);
+                if(data && data.getMostExperienced) console.log(typeof data.getMostExperienced);
             }}>
                 <button type="submit">Get The Most Experienced Cricketer</button>
             </form>
             {(data && data.getMostExperienced)?
-                (data.getMostExperienced.map((e) => {
 
-                    return (
-                        <p key={e.id}>
-                            {e.name+", "}
-                            {e.age+", "}
-                            {e.matches+", "}
-                            {e.id}
+                        <p key={data.getMostExperienced.id}>
+                            {data.getMostExperienced.name+", "}
+                            {data.getMostExperienced.age+", "}
+                            {data.getMostExperienced.matches+", "}
+                            {data.getMostExperienced.id}
                             <br/>
                         </p>
-                    )
-                })):((data)?<p>Atleast let them play one match!</p>:null)}
+                :null
+            }
         </div>
     )
 }
