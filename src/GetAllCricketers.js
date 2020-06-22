@@ -64,7 +64,7 @@ const GetAllCricketers = () => {
                 }}/>
                 <button type="submit">Get These Details</button>
             </form>
-            {(data)?
+            {(data && (details.name || details.matches || details.age || details.id || details.wickets))?
                 (data.getAllCricketers.map((e) => {
 
                     return (
