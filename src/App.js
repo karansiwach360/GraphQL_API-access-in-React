@@ -7,6 +7,7 @@ import GetAllCricketers from "./GetAllCricketers";
 import GetMostExperienced from "./GetMostExperienced";
 import CreateCricketer from "./CreateCricketer";
 import GetCricketerDetailsViaName from "./GetCricketerDetailsViaName";
+import UpdateCricketer from "./UpdateCricketer";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
       <br/>
       <br/>
       <CreateCricketer />
+      <br/>
+      <UpdateCricketer />
     </div>
   );
 }
