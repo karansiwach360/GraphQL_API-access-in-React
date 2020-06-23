@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import {useMutation, useQuery, useLazyQuery} from '@apollo/react-hooks';
+import {useLazyQuery} from '@apollo/react-hooks';
 import gql from "graphql-tag";
 
 const GetMostExperienced = () => {
@@ -25,7 +25,6 @@ const GetMostExperienced = () => {
     if (loading) return <p>Loading ...</p>;
     if (error) return <p>Error!</p>;
 
-    //console.log(data);
 
     return (
         <div className="get-most-experienced-cricketer">

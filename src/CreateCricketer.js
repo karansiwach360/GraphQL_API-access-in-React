@@ -23,8 +23,6 @@ const CreateCricketer = () => {
 
     const [getCreateCricketer, {data}] = useMutation(CREATE_CRICKETER);
 
-    //console.log(data);
-
     return (
         <div className="create-cricketer">
             <form onSubmit={(e)=>{
