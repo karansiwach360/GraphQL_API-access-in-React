@@ -1,3 +1,5 @@
+Introduction to graphql api - https://graphql.org/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 GraphQL API used: https://github.com/karansiwach360/GraphQL_API-in-Spring-with-MongoDB
